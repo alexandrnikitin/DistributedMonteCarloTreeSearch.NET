@@ -22,6 +22,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rides.Host", "samples\Googl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rides.Client", "samples\GoogleHashcode2018\Rides.Client\Rides.Client.csproj", "{9EA32E21-5240-4076-9E94-9FBA18904118}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{CB69DE5B-C45B-45D9-B30D-FEE5F3B4D1D8}"
+	ProjectSection(SolutionItems) = preProject
+		samples\GoogleHashcode2018\Resources\a_example.in = samples\GoogleHashcode2018\Resources\a_example.in
+		samples\GoogleHashcode2018\Resources\b_should_be_easy.in = samples\GoogleHashcode2018\Resources\b_should_be_easy.in
+		samples\GoogleHashcode2018\Resources\c_no_hurry.in = samples\GoogleHashcode2018\Resources\c_no_hurry.in
+		samples\GoogleHashcode2018\Resources\d_metropolis.in = samples\GoogleHashcode2018\Resources\d_metropolis.in
+		samples\GoogleHashcode2018\Resources\e_high_bonus.in = samples\GoogleHashcode2018\Resources\e_high_bonus.in
+		samples\GoogleHashcode2018\Resources\online_qualification_round_2018.pdf = samples\GoogleHashcode2018\Resources\online_qualification_round_2018.pdf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +67,7 @@ Global
 		{F180C2E6-EDA7-4220-9938-1647CB52223D} = {CF4C9FD2-6F33-4F1D-826B-10E5E434FFF1}
 		{507905B0-1CA7-4D21-A2CB-057E0AAEE22D} = {CF4C9FD2-6F33-4F1D-826B-10E5E434FFF1}
 		{9EA32E21-5240-4076-9E94-9FBA18904118} = {CF4C9FD2-6F33-4F1D-826B-10E5E434FFF1}
+		{CB69DE5B-C45B-45D9-B30D-FEE5F3B4D1D8} = {CF4C9FD2-6F33-4F1D-826B-10E5E434FFF1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CC8CBD4B-2088-4A35-87EE-45D0A0D04130}
