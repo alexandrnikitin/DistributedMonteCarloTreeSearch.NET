@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Net;
 using System.Threading.Tasks;
+using DMCTS.Grains;
+using Microsoft.Extensions.Logging;
 using Orleans;
 using Orleans.Configuration;
 using Orleans.Hosting;
@@ -37,15 +39,17 @@ namespace Rides.Host
         {
             // define the cluster configuration
             var siloPort = 11111;
-            int gatewayPort = 30000;
+            var gatewayPort = 30000;
             var siloAddress = IPAddress.Loopback;
-            var builder = new SiloHostBuilder()
-                .Configure(options => options.ClusterId = "helloworldcluster")
-                .UseDevelopmentClustering(
-                    options => options.PrimarySiloEndpoint = new IPEndPoint(siloAddress, siloPort))
-                .ConfigureEndpoints(siloAddress, siloPort, gatewayPort);
+            var host = new SiloHostBuilder()
+                .Configure(options => options.ClusterId = "google-hashcode-2018")
+                .UseDevelopmentClustering(options => options.PrimarySiloEndpoint = new IPEndPoint(siloAddress, siloPort))
+                .ConfigureEndpoints(siloAddress, siloPort, gatewayPort)
+                .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(TreeGrain<>).Assembly).WithReferences())
+                .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(MakeRideAction).Assembly).WithReferences())
+                .ConfigureLogging(logging => logging.AddConsole())
+                .Build();
 
-            var host = builder.Build();
             await host.StartAsync();
             return host;
         }

@@ -15,6 +15,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{ED9D7CBA-389D-41F7-A1D9-A541979519F3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GoogleHashcode2018", "GoogleHashcode2018", "{CF4C9FD2-6F33-4F1D-826B-10E5E434FFF1}"
+	ProjectSection(SolutionItems) = preProject
+		samples\GoogleHashcode2018\BuildAndRun.ps1 = samples\GoogleHashcode2018\BuildAndRun.ps1
+		samples\GoogleHashcode2018\BuildAndRun.sh = samples\GoogleHashcode2018\BuildAndRun.sh
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rides", "samples\GoogleHashcode2018\Rides\Rides.csproj", "{F180C2E6-EDA7-4220-9938-1647CB52223D}"
 EndProject
