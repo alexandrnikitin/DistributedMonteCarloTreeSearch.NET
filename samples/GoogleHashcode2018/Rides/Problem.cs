@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace GoogleHashcode2018
+namespace Rides
 {
     [Serializable]
     public class Problem

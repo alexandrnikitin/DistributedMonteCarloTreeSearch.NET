@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace GoogleHashcode2018
+namespace Rides
 {
     public class RidesBuilder
     {

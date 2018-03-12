@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace GoogleHashcode2018
+namespace Rides
 {
     public class ProblemBuilder
     {

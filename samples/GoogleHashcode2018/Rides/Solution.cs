@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text;
 
-namespace GoogleHashcode2018
+namespace Rides
 {
     public class Solution
     {

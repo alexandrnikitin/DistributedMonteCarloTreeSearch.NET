@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GoogleHashcode2018
+namespace Rides.Host
 {
     class Program
     {

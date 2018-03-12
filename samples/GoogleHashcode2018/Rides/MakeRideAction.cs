@@ -1,7 +1,7 @@
 ﻿using System;
 using DMCTS.GrainInterfaces;
 
-namespace GoogleHashcode2018
+namespace Rides
 {
     [Serializable]
     public class MakeRideAction : IAction

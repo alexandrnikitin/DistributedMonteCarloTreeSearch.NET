@@ -4,7 +4,7 @@ using System.Collections.Immutable;
 using DMCTS.GrainInterfaces;
 using Orleans.Concurrency;
 
-namespace GoogleHashcode2018
+namespace Rides
 {
     [Immutable]
     [Serializable]
